@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "wallpaper-app",
+    "name": "Aura",
     "slug": "wallpaper-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,7 +20,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.example.wallpaperApp",
+      "permissions": ["INTERNET"],
+      "newArchEnabled": true
     },
     "web": {
       "bundler": "metro",
@@ -29,10 +32,26 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "daf4975a-d464-4777-84c0-192bc3f2bba4"
+      }
     }
   }
 }
