@@ -6,6 +6,11 @@
 
 ---
 
+## Downloads
+
+- **[Download APK for Android](https://github.com/AnkitNayak-eth/Aura-wallpaper-app/releases/download/v1.0.0/aura.apk)**
+
+
 ## Features
 
 - **Explore Beautiful Wallpapers**  
